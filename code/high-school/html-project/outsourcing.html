@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Outsourcing</title>
+		
+		<link rel="stylesheet" href="style.css">		
+	</head>
+	
+	<body>
+		<div class="hero-image">
+			<ul class="header-menu">
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+				<a class="dropbtn">Roluri</a>
+				<div class="dropdown-content">
+					<a href="roluri.html">Producător</a>
+					<a href="roluri.html#developer">Dezvoltator</a>
+					<a href="roluri.html#distributor">Distribuitor</a>
+				</div>
+			</li>
+				<li><a href="proces.html">Proces</a></li>
+				<li><a href="outsourcing.html">Outsourcing</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+			
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <img src="banner1.jpg" >
+				  <div class="hero-text"><b>Outsourcing</b></div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="banner3.jpg">
+				  <div class="hero-text"><b>Outsourcing</b></div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="banner2.jpg">
+				  <div class="hero-text"><b>Outsourcing</b></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column middle">
+					<div class="padding">
+						<p>În majoritatea cazurilor, echipele de dezvoltare vor angaja liber profesionști (freelancers), mai ales pentru design, muzică sau efecte sonore. Acest proces se numește outsourcing și este, în general, mai ieftin decât folosirea unor angajați cu normă întreagă. Acești liber profesioniști, de obicei, sunt compozitori de muzică pentru coloana sonoră a jocului, artiști, voci sau chiar programatori.</p>	
+					</div>
+					<div class="padding">
+						<img id="image" src="img.jpg">
+					</div>			
+		</div>
+
+		<script>
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}
+					slides[slideIndex-1].style.display = "block";  
+
+				setTimeout(showSlides, 5000);
+			}
+		</script>
+	</body>
+</html>

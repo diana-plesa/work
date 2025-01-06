@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Proces</title>
+		
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div class="hero-image">
+			<ul class="header-menu">
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+				<a class="dropbtn">Roluri</a>
+				<div class="dropdown-content">
+					<a href="roluri.html">Producător</a>
+					<a href="roluri.html#developer">Dezvoltator</a>
+					<a href="roluri.html#distributor">Distribuitor</a>
+				</div>
+			</li>
+				<li><a href="proces.html">Proces</a></li>
+				<li><a href="outsourcing.html">Outsourcing</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <img src="banner1.jpg" >
+				  <div class="hero-text"><b>Proces</b></div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="banner3.jpg">
+				  <div class="hero-text"><b>Proces</b></div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="banner2.jpg">
+				  <div class="hero-text"><b>Proces</b></div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="column middle">
+				<div class="padding">
+					
+						<p><b>Procesul de creare a jocurilor video include:</b></p>
+						<ol> 
+						<li>pre-producerea</li>
+						<li>producerea propriu-zisă</li>
+						<li>post-producerea</li>
+						</ol>
+					
+					<div class="padding">
+						<h3>Pre-producerea</h3>
+						<p>Aici începe fiecare proiect. În esență, pre-producția definește despre ce este vorba în joc, de ce ar trebui să fie realizat și de ce va fi nevoie pentru a-l realiza. Această etapă poate dura între o săptămână și un an, în funcție de tipul de proiect, resurse și finanțe. De obicei, durează până la 20% din timpul total de producție.</p>
+						<p>În acest moment, echipa este destul de mică. Poate exista un producător, un programator, și un artist conceptual.</p>
+						<p>Un producător de jocuri video se ocupă de aspectul financiar al proiectului. Ei gestionează bugetul și dezvoltă strategii de marketing pentru a vinde produsul.</p>
+						<p>Un artist conceptual stabilește tonul proiectului de la început prin crearea unor schițe. Aceste imagini ajută la formarea jocului, oferind tuturor celor care lucrează la proiect un ghid vizual pentru atmosfera și apariția sa.</p>
+						<img id="image" src="img6.jpg">
+						<p class="img-desc"><i>Artă conceptuală a orașului Night City din jocul 'Cyberpunk 2077'</i></p>
+						<img id="image" src="img7.jpg">
+						<p class="img-desc"><i>Artă conceptuală a unor personaje din 'League of Legends'</i></p>
+						<h3>Producerea propriu-zisă</h3>
+						<p>Durând între 1-4 ani, producția este etapa în care jocul începe cu adevărat să prindă contur. Povestea este finisată, sunt stabilite regulile de joc, nivelurile și lumile sunt construite, codul este scris etc.</p>
+						<p>Există o serie de repere de atins pe parcursul procesului de dezvoltare a jocului.</p>
+						<ol>
+							<li><b>Prototip:</b> Acesta este testul inițial al jocului. Este posibil ca unele jocuri să nu treacă niciodată de această etapă.</li>
+							<br>
+							<li><b>'First playable':</b> prima redare oferă o idee mult mai bună despre aspectul și modul de joc. Deși este încă departe de a fi definitiv, substituenții sunt înlocuiți cu materiale de calitate superioară.</li>
+							<br>
+							<li><b>'Vertical slice':</b> este o mostră a jocului care poate fi folosită pentru a prezenta jocul studiourilor sau investitorilor, ce poate dura de la doar câteva minute până la o jumătate de oră.	</li>
+							<br>
+							<li><b>Pre-alfa:</b> majoritatea conținutului este dezvoltat în stadiul pre-alfa. În acest moment al dezvoltării jocului, vor trebui luate unele decizii importante. Conținutul poate fi tăiat sau vor trebui adăugate elemente noi pentru a îmbunătăți jocul.</li>
+							<br>
+							<li><b>Alpha:</b> Jocul este "stare completă”, ceea ce înseamnă că toate caracteristicile principale au fost adăugate și jocul este complet jucabil de la început până la sfârșit. Este posibil ca unele elemente, cum ar fi materialele artistice, să fie încă necesare, dar controalele și funcționalitățile ar trebui să funcționeze corect. Testerii se vor asigura că totul funcționează fără probleme și vor raporta erorile înapoi echipei.</li>
+							<br>
+							<li><b>Beta:</b> În acest moment, tot conținutul este integrat, iar echipa ar trebui să se concentreze mai degrabă pe optimizare decât pe adăugarea de noi funcții sau caracteristici.</li>
+							<br>
+							<li><b>Gold Master:</b> jocul este pregătit pentru a fi lansat publicului.</li>
+						</ol>
+						<h3>Post-producerea</h3>
+						<p>Odată ce jocul este lansat către public, procesul de dezvoltare a jocului continuă, unii membri ai echipei având roul de întreținere a jocului (remedierea erorilor) sau crearea de bonusuri sau conținut descărcabil (DLC). Ceilalți trec la continuarea sau începutul următorului proiect.</p>
+						<p>De obicei, se mai organizează o ședință pentru a discuta ce a funcționat/nu a funcționat și pentru a determina ce ar putea fi făcut mai bine data viitoare. Toate documentele de proiectare, fișierele și codul sunt finalizate, adunate și stocate, în cazul în care vor fi necesare în viitor.</p>
+					</div>
+				</div>		
+		</div>
+	
+		<script>
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}
+					slides[slideIndex-1].style.display = "block";  
+
+				setTimeout(showSlides, 5000);
+			}
+		</script>
+	</body>
+</html>

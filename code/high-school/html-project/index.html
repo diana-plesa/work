@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Crearea unui joc video</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<div class="hero-image">
+			<ul class="header-menu">
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown">
+				<a class="dropbtn">Roluri</a>
+				<div class="dropdown-content">
+					<a href="roluri.html">Producător</a>
+					<a href="roluri.html#developer">Dezvoltator</a>
+					<a href="roluri.html#distributor">Distribuitor</a>
+				</div>
+			</li>
+				<li><a href="proces.html">Proces</a></li>
+				<li><a href="outsourcing.html">Outsourcing</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+			
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <img src="banner1.jpg" >
+				  <div class="hero-text"><b>Crearea unui joc video</b></div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="banner3.jpg">
+				  <div class="hero-text"><b>Crearea unui joc video</b></div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="banner2.jpg">
+				  <div class="hero-text"><b>Crearea unui joc video</b></div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="row">
+			<div class="column middle">
+				<div class="padding">
+					<p  align="center"><i>Fiecare generație are forma ei de spus povești, iar jocurile video reprezintă o parte importantă a culturii noastre. Puteți să le ignorați sau să vă bucurați de acestea, observându-le calitatea artistică. Unii oameni sunt pasionați de jocuri video în același mod în care alții sunt pasionați de cinematografie sau de teatru.</i></p>
+					<p  align="center"><i>-Andy Serkis</i></p>
+				</div>
+				<div class="padding">
+					<h3>Procesul de creație a unui joc video reprezintă totalitatea eforturilor software și non-software dezvoltatorului/dezvoltatorilor de a aduce un joc video de la starea conceptuală până la final. </h3>
+					<p>Acest proces nu este întotdeauna unul liniar - având în vedere faptul că dezvoltatorul trebuie să se concentreze pe mai multe ramuri, precum programarea propriu zisă, design-ul, arta, testarea etc., pot apărea multe impase și e posibil să fie necesară modificarea mai multor lucruri deja create. Din această cauză, pe lângă timpul necesar brainstorming-ului și efectiv creației, acest proces poate dura câțiva ani.</p>
+					<p>Creația unui joc video poate fi considerată o știință, cât și o artă. În funcție de succesul pe care îl are, acesta generează un anumit profit.</p>
+					<h3>Un fapt important este că industria jocurilor video are nevoie de idei originale și inovatoare, întrucât distributorul nu poate genera un profit prin jocuri repetitive și imitații.</h3>
+					<p>Procesul de creație și design a unui joc video pornește de obicei de la o idee sau de la un concept. Adesea, ideea se bazează pe modificarea unui concept a unui joc video existent. Tema jocului se poate încadra în unul sau mai multe genuri. Designerii experimentează adesea cu diferite combinații de genuri. Un designer de jocuri scrie, în general, un document inițial de propunere de joc, care descrie conceptul de bază, jocul, caracteristicile, decorul și povestea, publicul țintă, cerințele și programul și, în final, estimările de personal necesar și buget. Fiecare firmă are proceduri și filozofii diferite în ceea ce privește creația și dezvoltarea jocurilor; nu există o metodă de creație standardizată, însă există asemănări.</p>
+					<img id="image" src="img1.jpg">
+					<p class="img-desc"><i>Acțiunea jocului 'Horizon Zero Dawn' se petrece în viitorul îndepărtat. Tema include numeroase elemente science fiction, mai ales sugerate de prezența creaturilor mecatronice, însă nu susține ideea abandonării planetei în favoarea altor corpuri cerești; în schimb, îmbină idei fantastice într-un mediu apocaliptic, tehnologia fiind folosită într-un plan de existență similar cu cel preistoric, cu scopul de a salva planeta de la distrugere.</i></p>
+					<p>În fiecare an se deschid noi firme independente de jocuri video, iar unele reușesc să lanseze titluri de succes. În mod similar, mulți dezvoltatori se închid pentru că nu găsesc un contract de publicare sau producția lor nu este profitabilă. Este dificil să înființezi o nouă firmă din cauza investiției mare și necesare. Cu toate acestea, creșterea pieței de jocuri casual și mobile a permis dezvoltatorilor cu echipe mai mici să intre pe piață. Odată ce firmele devin stabile din punct de vedere financiar, se pot extinde pentru a dezvolta jocuri mai mari. Majoritatea dezvoltatorilor încep având mici dimensiuni și își extind treptat afacerea. Un dezvoltator care primește profit dintr-un titlu de succes poate stoca capital pentru a-și extinde și a-și reforma firma, precum și a tolera mai multe termene-limită nereușite.</p>
+					<p>Majoritatea jocurilor video pentru PC sau consolă durează de la trei până la cinci ani pentru a fi finalizate, în timp ce un joc video pentru telefon sau tabletă poate fi dezvoltat în câteva luni. Durata dezvoltării este influențată de o serie de factori, cum ar fi genul, scara, platforma de dezvoltare și numărul de resurse.</p>
+					<p>Unele jocuri pot dura mult mai mult decât intervalul de timp mediu pentru finalizare. Un exemplu bine cunoscut pentru acest caz este 3D Realms' Duke Nukem Forever, anunțat a fi în producție în aprilie 1997 și lansat abia paisprezece ani mai târziu, în iunie 2011.</p>
+				</div>
+			</div>		
+		</div>
+		
+		<script>
+			let slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}
+					slides[slideIndex-1].style.display = "block";  
+
+				setTimeout(showSlides, 5000);
+			}
+			</script>
+	</body>
+</html>
