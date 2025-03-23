@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     // Start is called before the first frame update
+    //FIND NEW
 
     public float moveSpeed;
     public GameObject ExplosionPrefab;
